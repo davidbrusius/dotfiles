@@ -18,7 +18,7 @@ brew 'wxmac'
 
 brew 'postgresql', restart_service: true
 brew 'rabbitmq', restart_service: true
-brew 'redis'
+brew 'redis', restart_service: :changed
 
 brew 'geos'
 brew 'postgis'
