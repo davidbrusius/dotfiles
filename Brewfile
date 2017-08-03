@@ -27,6 +27,8 @@ brew 'postgis'
 brew 'proj'
 brew 'liblwgeom'
 
+brew 'exercism'
+
 tap 'caskroom/cask'
 cask 'alfred'
 cask 'atom'
