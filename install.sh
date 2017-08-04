@@ -6,9 +6,11 @@ export DOTFILES_INSTALLER="${DOTFILES}/installers"
 export DOTFILES_TEMPLATES="${DOTFILES}/templates"
 
 source ${DOTFILES_INSTALLER}/utils
+source ${DOTFILES_INSTALLER}/custom_env_vars
 
 print_in_purple 'Running installers'
 
 ${DOTFILES_INSTALLER}/git
+${DOTFILES_INSTALLER}/osx
 
 print_in_green '\nSuccess!\n' && exit 0

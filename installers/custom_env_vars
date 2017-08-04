@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+export USER_NAME="David Brusius"
+export USER_EMAIL="brusiusdavid@gmail.com"
+export GITHUB_USER="davidbrusius"

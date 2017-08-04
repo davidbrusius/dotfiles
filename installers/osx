@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+source ${DOTFILES_INSTALLER}/utils
+
+print_in_yellow '\nSetting up - OS X - configuration... '
+
+ask_for_sudo
+
+## Security
+
+# Enable full-disk encryption.
+sudo fdesetup enable -user "$USER" \
+  | tee ~/Desktop/"FileVault Recovery Key.txt"
+
+# Enable Firewall
+sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
+sudo launchctl load /System/Library/LaunchDaemons/com.apple.alf.agent.plist 2>/dev/null
+
+# Adds a Found this computer? message to the login screen (for machine recovery)
+sudo defaults write /Library/Preferences/com.apple.loginwindow \
+   LoginwindowText \
+   "Found this computer? Please contact $USER_NAME '$GITHUB_USER' at $USER_EMAIL."
+
+# Empty Trash securely by default
+defaults write com.apple.finder EmptyTrashSecurely -bool true
+
+# Enables the macOS screensaver password immediately (for better security)
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Disables Java in Safari (for better security)
+defaults write com.apple.Safari \
+  com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabled \
+  -bool false
+defaults write com.apple.Safari \
+  com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabledForLocalFiles \
+  -bool false
+
+print_success
