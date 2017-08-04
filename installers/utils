@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# Extracted from https://github.com/alrra/dotfiles
+
+print_error() {
+  print_in_red "[✖] $1 $2\n"
+}
+
+print_in_green() {
+  printf "\e[0;32m$1\e[0m"
+}
+
+print_in_purple() {
+  printf "\e[0;35m$1\e[0m"
+}
+
+print_in_red() {
+  printf "\e[0;31m$1\e[0m"
+}
+
+print_in_yellow() {
+  printf "\e[0;33m$1\e[0m"
+}
+
+print_question() {
+  print_in_yellow "[?] $1"
+}
+
+print_success() {
+  print_in_green "[✔] $1\n"
+}
