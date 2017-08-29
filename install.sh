@@ -12,5 +12,6 @@ print_in_purple 'Running installers'
 
 ${DOTFILES_INSTALLER}/git
 ${DOTFILES_INSTALLER}/osx
+${DOTFILES_INSTALLER}/shell
 
 print_in_green '\nSuccess!\n' && exit 0

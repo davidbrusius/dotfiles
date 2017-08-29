@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+source ${DOTFILES_INSTALLER}/utils
+
+print_in_yellow '\nSetting up - shell - configuration... '
+
+# Copy binaries to ~/.bin
+ln -s ${DOTFILES}/bin $HOME/.bin
+
+print_success
