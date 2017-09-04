@@ -15,6 +15,7 @@ brew 'node-build'
 brew 'phantomjs'
 brew 'rbenv'
 brew 'ruby-build'
+brew 'tree'
 brew 'wget'
 brew 'wxmac'
 

@@ -10,6 +10,7 @@ source ${DOTFILES_INSTALLER}/custom_env_vars
 
 print_in_purple 'Running installers'
 
+${DOTFILES_INSTALLER}/brew
 ${DOTFILES_INSTALLER}/git
 ${DOTFILES_INSTALLER}/osx
 ${DOTFILES_INSTALLER}/shell
