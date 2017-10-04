@@ -12,12 +12,18 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>CAAD789A-36BD-4C6B-9FC7-6970C9DC0A44</string>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Desktop</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -60,18 +66,20 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>230 1097 691 177 -282 800 1920 1080 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>269 313 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 289 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>138 74 606 456 0 0 1280 777 </string>
+	<string>-13 944 606 456 -282 800 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>83 969 796 473 -282 800 1920 1080 </string>
+	<string>83 1039 918 495 -282 800 1920 1080 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>393 1102 570 452 -282 800 1920 1057 </string>
+	<string>0 325 570 452 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>152 50 570 452 0 0 1280 777 </string>
 	<key>NeverWarnAboutShortLivedSessions_A70033D0-4A01-4979-B92C-CD72691E5484</key>
@@ -1293,7 +1301,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>647E6DDA-71F6-4495-9AF9-483CCD09EEE2</string>
 	<key>NoSyncLastTipTime</key>
-	<real>499000002.47182399</real>
+	<real>528074004.15652102</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1375,6 +1383,10 @@
 		<string>0063</string>
 		<string>0064</string>
 		<string>0065</string>
+		<string>0066</string>
+		<string>0067</string>
+		<string>0068</string>
+		<string>0069</string>
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
@@ -1426,7 +1438,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-04T12:45:47Z</date>
+	<date>2017-09-25T23:13:23Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -1446,7 +1458,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.15</string>
+	<string>3.1.2</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
