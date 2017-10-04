@@ -29,6 +29,7 @@ brew 'proj'
 brew 'liblwgeom'
 
 brew 'exercism'
+brew 'svgo'
 
 tap 'caskroom/cask'
 cask 'alfred'
