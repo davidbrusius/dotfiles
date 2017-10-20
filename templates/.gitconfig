@@ -2,7 +2,7 @@
 	co = checkout
 	st = status
 	ci = commit
-	cia = commit --amend
+	cia = commit --amend --no-edit
   reset-author = commit --amend --no-edit --reset-author
 	br = branch
 	lg = log --oneline --decorate --graph --abbrev-commit
