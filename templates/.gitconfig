@@ -6,7 +6,7 @@
   br = branch
 	cia = commit --amend --no-edit
   reset-author = commit --amend --no-edit --reset-author
-  fetch-rebase = !git fetch origin --prune $1 && git rebase origin/master
+  fetch-rebase = !git fetch origin --prune && git rebase origin/master
 
 [color]
   diff = auto
