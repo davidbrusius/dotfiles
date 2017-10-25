@@ -6,6 +6,7 @@
   reset-author = commit --amend --no-edit --reset-author
 	br = branch
 	lg = log --oneline --decorate --graph --abbrev-commit
+  fetch-rebase = !git fetch origin --prune $1 && git rebase origin/master
 
 [color]
   diff = auto
