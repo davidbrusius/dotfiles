@@ -1,5 +1,5 @@
-# Git autocomplete
-source ~/git-completion.bash
+# Bash completion
+. $(brew --prefix)/etc/bash_completion
 
 # Git branch in prompt
 parse_git_branch() {
@@ -19,3 +19,6 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
