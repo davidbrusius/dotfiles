@@ -17,9 +17,20 @@ brew 'tree'
 brew 'wget'
 brew 'wxmac'
 
-brew 'postgresql', restart_service: true
+brew 'postgresql@9.6', restart_service: true
 brew 'rabbitmq', restart_service: true
 brew 'redis', restart_service: :changed
+
+brew 'libyaml'
+brew 'coreutils'
+brew 'automake'
+brew 'autoconf'
+brew 'openssl'
+brew 'libyaml'
+brew 'readline'
+brew 'libxslt'
+brew 'libtool'
+brew 'unixodbc'
 
 brew 'geos'
 brew 'postgis'
@@ -39,3 +50,6 @@ cask 'iterm2'
 cask 'postico'
 cask 'postman'
 cask 'slack'
+cask 'spectacle'
+cask 'sublime-text'
+cask 'vlc'

@@ -14,8 +14,8 @@ ruby_version() {
   asdf current ruby | sed -e 's/No version set for ruby//g' -e 's/(\(.*\))//' -e 's/ //g'
 }
 
-export PATH="$HOME/.bin:$PATH"
-
 export PS1="\w \[\033[1;33m\]\$(ruby_version)\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+export PATH="$HOME/.bin:/bin:$PATH"
