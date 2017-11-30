@@ -10,7 +10,6 @@ answer_is_yes() {
 ask_for_confirmation() {
   print_question "$1 (y/n) "
   read -n 1
-  printf "\n"
 }
 
 ask_for_sudo() {

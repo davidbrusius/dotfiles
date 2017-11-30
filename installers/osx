@@ -17,9 +17,7 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow \
    "Found this computer? Please contact $USER_NAME at $USER_EMAIL."
 
 # Enable full-disk encryption
-if fdesetup status | grep $Q -E "FileVault is (On|Off, but will be enabled after the next restart)."; then
-  echo
-else
+if ! fdesetup status | grep $Q -E "FileVault is (On|Off, but will be enabled after the next restart)." &> /dev/null; then
   sudo fdesetup enable -user "$USER" \
     | tee ~/Desktop/"FileVault Recovery Key.txt"
 fi
