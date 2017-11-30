@@ -6,4 +6,7 @@ print_in_yellow '\nSetting up - shell - configuration... '
 # Copy binaries to ~/.bin
 ln -sf ${DOTFILES}/bin ~/.bin
 
+# Setup bash configurations
+ln -sf ${DOTFILES_TEMPLATES}/.bash_profile ~/.bash_profile
+
 print_success
