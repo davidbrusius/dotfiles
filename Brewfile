@@ -31,7 +31,6 @@ brew 'svgo'
 
 tap 'caskroom/cask'
 cask 'alfred'
-cask 'amphetamine'
 cask 'boostnote'
 cask 'dash'
 cask 'dropbox'
