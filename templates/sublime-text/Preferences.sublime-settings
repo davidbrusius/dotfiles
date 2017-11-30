@@ -1,0 +1,38 @@
+{
+	"color_scheme": "Packages/User/Themes/davidbrusius (SL).tmTheme",
+	"draw_indent_guides": false,
+	"ensure_newline_at_eof_on_save": true,
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		"tmp"
+	],
+	"font_face": "Fira Mono",
+	"font_size": 18,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"remember_full_screen": true,
+	"rulers":
+	[
+		80
+	],
+	"show_encoding": true,
+	"show_errors_inline": false,
+	"tab_size": 2,
+	"theme": "Primer Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"wide_caret": true,
+	"word_wrap": false
+}

@@ -1,0 +1,32 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"Colorsublime",
+		"Cucumber",
+		"Elixir",
+		"ERB Autocomplete",
+		"GitSavvy",
+		"JSON Reindent",
+		"MarkdownEditing",
+		"Package Control",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeERB",
+		"SublimeLinter",
+		"SublimeLinter-contrib-scss-lint",
+		"SublimeLinter-rubocop",
+		"SublimeLinter-ruby",
+		"TestRSpec",
+		"Theme - Primer",
+		"TomDoc",
+		"TrailingSpaces",
+		"WordHighlight"
+	]
+}

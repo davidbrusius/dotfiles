@@ -14,5 +14,6 @@ ${DOTFILES_INSTALLER}/brew
 ${DOTFILES_INSTALLER}/git
 ${DOTFILES_INSTALLER}/osx
 ${DOTFILES_INSTALLER}/shell
+${DOTFILES_INSTALLER}/sublime-text
 
 print_in_green '\nSuccess!\n' && exit 0
