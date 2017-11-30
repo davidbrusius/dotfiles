@@ -1,0 +1,2 @@
+# Allow using .ruby-version to enable auto-switching between Ruby versions.
+legacy_version_file = yes
