@@ -4,7 +4,8 @@
 	ci = commit
   lg = log --oneline --decorate --graph --abbrev-commit
   br = branch
-	cia = commit --amend --no-edit
+  cm = checkout master
+  cia = commit --amend --no-edit
   reset-author = commit --amend --no-edit --reset-author
   fetch-rebase = !git fetch origin --prune && git rebase origin/master
 
