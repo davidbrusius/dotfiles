@@ -6,6 +6,8 @@
   br = branch
   cm = checkout master
   cia = commit --amend --no-edit
+  rc = rebase --continue
+  rs = rebase --skip
   reset-author = commit --amend --no-edit --reset-author
   fetch-rebase = !git fetch origin --prune && git rebase origin/master
 
