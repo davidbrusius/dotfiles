@@ -1,4 +1,9 @@
 {
+	"binary_file_patterns":
+	[
+		"log/",
+		"coverage/"
+	],
 	"color_scheme": "Packages/User/Themes/davidbrusius (SL).tmTheme",
 	"draw_indent_guides": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -9,12 +14,11 @@
 		"tmp"
 	],
 	"font_face": "Fira Mono",
-	"font_size": 20,
+	"font_size": 21,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Markdown",
 		"Vintage"
 	],
 	"indent_guide_options":

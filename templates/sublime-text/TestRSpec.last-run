@@ -1,0 +1,13 @@
+{
+	"command_hash":
+	{
+		"encoding": "utf-8",
+		"env":
+		{
+		},
+		"file_regex": "([^ ]*\\.rb):?(\\d*)",
+		"shell_cmd": "( cd /Users/davidbrusius/src/ptec/youse-seguradora/conversation && ./bin/rspec app/events/youse_chat_message_arrived_event.rb)",
+		"syntax": "Packages/TestRSpec/themes/TestConsole.tmLanguage",
+		"working_dir": "/Users/davidbrusius/src/ptec/youse-seguradora/conversation"
+	}
+}
