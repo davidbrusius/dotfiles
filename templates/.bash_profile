@@ -21,3 +21,6 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export PATH="$HOME/.bin:/bin:$PATH"
 export EDITOR="subl -w"
+
+# Keep iex history
+export ERL_AFLAGS="-kernel shell_history enabled"
