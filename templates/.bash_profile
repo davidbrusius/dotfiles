@@ -26,3 +26,9 @@ export EDITOR="subl -w"
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 export GOPATH=~/go
+
+
+####################
+# Aliases
+####################
+alias ms="mix phx.server"
