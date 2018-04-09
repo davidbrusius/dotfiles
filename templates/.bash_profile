@@ -19,7 +19,10 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export PATH="$HOME/.bin:/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
 export EDITOR="subl -w"
 
 # Keep iex history
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+export GOPATH=~/go
