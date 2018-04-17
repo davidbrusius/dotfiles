@@ -18,6 +18,7 @@ export PS1="\w\[\033[1;33m\] \$(elixir_version)\[\033[32m\]\$(parse_git_branch)\
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
+export GOPATH=~/go
 export PATH="$HOME/.bin:/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 export EDITOR="subl -w"
@@ -25,10 +26,8 @@ export EDITOR="subl -w"
 # Keep iex history
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-export GOPATH=~/go
-
-
 ####################
 # Aliases
 ####################
 alias ms="mix phx.server"
+alias ims="iex -S mix phx.server"
