@@ -29,5 +29,6 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 ####################
 # Aliases
 ####################
+alias lsa="ls -la"
 alias ms="mix phx.server"
 alias ims="iex -S mix phx.server"
