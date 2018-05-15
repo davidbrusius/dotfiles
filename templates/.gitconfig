@@ -10,6 +10,7 @@
   rs = rebase --skip
   reset-author = commit --amend --no-edit --reset-author
   fetch-rebase = !git fetch origin --prune && git rebase origin/master
+  unstage = reset --soft HEAD^
 
 [color]
   diff = auto
