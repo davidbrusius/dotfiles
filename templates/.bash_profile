@@ -19,8 +19,7 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export GOPATH=~/go
-export PATH="$HOME/.bin:/bin:$PATH"
-export PATH="$PATH:$GOPATH/bin"
+export PATH="$HOME/.bin:/usr/local/sbin/:$GOPATH/bin:/bin:$PATH"
 export EDITOR="subl -w"
 
 # Keep iex history
