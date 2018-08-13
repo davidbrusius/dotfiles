@@ -30,6 +30,9 @@
 [pull]
   rebase = true
 
+[rebase]
+  autosquash = true
+
 [github]
 	user = davidbrusius
 
