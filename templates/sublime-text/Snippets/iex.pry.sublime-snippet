@@ -1,7 +1,6 @@
 <snippet>
   <content><![CDATA[
-require IEx
-IEx.pry
+require IEx; IEx.pry
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>pry</tabTrigger>
