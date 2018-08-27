@@ -76,7 +76,7 @@
 			<string>Class, Support, Module</string>
 			<key>scope</key>
 			<string>entity.name.class, entity.name.type.class, entity.name.module, entity.name.type.module
-support.type, support.class</string>
+support.type, support.class, entity.other.inherited-class</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -87,7 +87,7 @@ support.type, support.class</string>
 			<key>name</key>
 			<string>String, Inherited Class, Markup Heading</string>
 			<key>scope</key>
-			<string>string, entity.other.inherited-class, markup.heading</string>
+			<string>string, markup.heading</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
