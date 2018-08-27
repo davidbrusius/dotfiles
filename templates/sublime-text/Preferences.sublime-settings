@@ -11,6 +11,10 @@
 	"folder_exclude_patterns":
 	[
 		".git",
+		"_build",
+		"assets/node_modules",
+		"priv/static",
+		"deps",
 		"tmp"
 	],
 	"font_face": "Fira Mono",
