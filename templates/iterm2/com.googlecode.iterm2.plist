@@ -39,8 +39,10 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
@@ -73,10 +75,16 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>357 1298 620 392 -293 800 1920 1057 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>217 95 606 469 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>263 1015 770 429 -95 800 1440 877 </string>
+	<string>332 1132 918 401 -293 800 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-293 800 1920 1057 -293 800 1920 1057 </string>
+	<string>0 0 1280 777 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>-66 930 570 452 -293 800 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_A70033D0-4A01-4979-B92C-CD72691E5484</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A70033D0-4A01-4979-B92C-CD72691E5484_selection</key>
@@ -614,7 +622,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 12</string>
+			<string>Monaco 14</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1293,10 +1301,14 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>859A0EC1-2D72-4FA6-ABA4-889EAC330ACD</string>
+	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
+	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>533746787.55580902</real>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -1349,13 +1361,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-12-05T16:43:03Z</date>
+	<date>2018-08-22T23:48:50Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
@@ -1381,7 +1393,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.2.0</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
