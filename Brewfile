@@ -4,21 +4,17 @@ tap 'homebrew/core'
 tap 'homebrew/services'
 tap 'homebrew/versions'
 
-brew 'ack'
 brew 'bash'
 brew 'bash-completion'
-brew 'elixir'
 brew 'git'
 brew 'heroku'
 brew 'node-build'
-brew 'phantomjs'
 brew 'ruby-build'
 brew 'tree'
 brew 'wget'
 brew 'wxmac'
 
-brew 'postgresql@9.6', restart_service: true
-brew 'rabbitmq', restart_service: true
+brew 'postgresql', restart_service: true
 brew 'redis', restart_service: :changed
 
 brew 'libyaml'
@@ -32,12 +28,6 @@ brew 'libxslt'
 brew 'libtool'
 brew 'unixodbc'
 
-brew 'geos'
-brew 'postgis'
-brew 'proj'
-brew 'liblwgeom'
-
-brew 'exercism'
 brew 'svgo'
 
 tap 'caskroom/cask'
@@ -47,6 +37,7 @@ cask 'dash'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'iterm2'
+cask 'insomnia'
 cask 'postico'
 cask 'postman'
 cask 'slack'
