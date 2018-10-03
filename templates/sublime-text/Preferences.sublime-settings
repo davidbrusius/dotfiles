@@ -4,7 +4,7 @@
 		"log/",
 		"coverage/"
 	],
-	"color_scheme": "Packages/User/Themes/davidbrusius (SL).tmTheme",
+	"color_scheme": "Packages/User/Color Highlighter/themes/davidbrusius (SL).tmTheme",
 	"draw_indent_guides": false,
 	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
@@ -15,6 +15,7 @@
 		"assets/node_modules",
 		"priv/static",
 		"deps",
+		"node_modules",
 		"tmp"
 	],
 	"font_face": "Fira Mono",
@@ -38,7 +39,7 @@
 	"show_encoding": true,
 	"show_errors_inline": false,
 	"tab_size": 2,
-	"theme": "Primer Dark.sublime-theme",
+	"theme": "DA.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": true,

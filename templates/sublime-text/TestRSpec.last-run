@@ -6,8 +6,8 @@
 		{
 		},
 		"file_regex": "([^ ]*\\.rb):?(\\d*)",
-		"shell_cmd": "( cd /Users/davidbrusius/src/ptec/youse-seguradora/conversation && ./bin/rspec app/events/youse_chat_message_arrived_event.rb)",
+		"shell_cmd": "( cd /Users/davidbrusius/src/ptec/the-real-real/real-server && ./bin/rspec app/services/algolia_service.rb)",
 		"syntax": "Packages/TestRSpec/themes/TestConsole.tmLanguage",
-		"working_dir": "/Users/davidbrusius/src/ptec/youse-seguradora/conversation"
+		"working_dir": "/Users/davidbrusius/src/ptec/the-real-real/real-server"
 	}
 }
