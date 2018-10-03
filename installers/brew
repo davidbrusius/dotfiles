@@ -6,7 +6,7 @@ print_in_yellow '\nSetting up - brew - configuration... '
 ask_for_confirmation 'Install brew packages?'
 
 if answer_is_yes; then
-  print "\n"
+  printf "\n"
   brew update
   brew bundle
 

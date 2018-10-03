@@ -2,7 +2,6 @@ tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'homebrew/services'
-tap 'homebrew/versions'
 
 brew 'bash'
 brew 'bash-completion'
