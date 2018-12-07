@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-IO.inspect($0)
+IO.inspect($0, label: "")
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>inspect</tabTrigger>
