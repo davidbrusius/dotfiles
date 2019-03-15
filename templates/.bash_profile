@@ -8,6 +8,9 @@ complete -W "$(itermocil --list)" itermocil
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
+# Direnv
+eval "$(direnv hook bash)"
+
 # Git branch in prompt
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/' -e 's/\s+//g'
