@@ -1,5 +1,0 @@
-// Settings in here override those in "GitSavvy/GitSavvy.sublime-settings",
-
-{
-  "use_syntax_for_commit_editmsg": true
-}
