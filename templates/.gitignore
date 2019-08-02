@@ -2,3 +2,4 @@
 .env.development
 .elixir_ls
 .envrc
+.vscode
