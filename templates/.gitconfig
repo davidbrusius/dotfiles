@@ -42,5 +42,5 @@
 [include]
   path = ~/.gitconfig.personal
 
-[includeIf "gitdir:~/src/ptec/"]
+[includeIf "gitdir:~/dev/magnetis/"]
   path = ~/.gitconfig.work
