@@ -1,15 +1,9 @@
 # Bash completion
 . $(brew --prefix)/etc/bash_completion
 
-# Itermocil completion
-complete -W "$(itermocil --list)" itermocil
-
 # Asdf version manager
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
-
-# Direnv
-eval "$(direnv hook bash)"
 
 # Git branch in prompt
 parse_git_branch() {
