@@ -28,6 +28,13 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 ####################
 # Aliases
 ####################
+alias dc="docker-compose"
 alias lsa="ls -la"
 alias ms="mix phx.server"
 alias ims="iex -S mix phx.server"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/davidbrusius/google-cloud-sdk/path.bash.inc' ]; then . '/Users/davidbrusius/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/davidbrusius/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/davidbrusius/google-cloud-sdk/completion.bash.inc'; fi
