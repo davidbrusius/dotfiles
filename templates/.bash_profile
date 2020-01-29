@@ -19,7 +19,7 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export GOPATH=~/go
-export PATH="$HOME/.bin:/usr/local/sbin/:$GOPATH/bin:/bin:$PATH"
+export PATH="$HOME/.bin:/usr/local/sbin/:$GOPATH/bin:/bin:/usr/local/opt/libpq/bin:$PATH"
 export EDITOR="code -w"
 
 # Keep iex history
@@ -33,8 +33,11 @@ alias lsa="ls -la"
 alias ms="mix phx.server"
 alias ims="iex -S mix phx.server"
 
-# The next line updates PATH for the Google Cloud SDK.
+# Update PATH for the Google Cloud SDK.
 if [ -f '/Users/davidbrusius/google-cloud-sdk/path.bash.inc' ]; then . '/Users/davidbrusius/google-cloud-sdk/path.bash.inc'; fi
 
-# The next line enables shell command completion for gcloud.
+# Enable shell command completion for gcloud.
 if [ -f '/Users/davidbrusius/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/davidbrusius/google-cloud-sdk/completion.bash.inc'; fi
+
+# Enable autojump integration
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
