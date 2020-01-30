@@ -25,6 +25,9 @@ export EDITOR="code -w"
 # Keep iex history
 export ERL_AFLAGS="-kernel shell_history enabled"
 
+# Disable zsh warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 ####################
 # Aliases
 ####################
