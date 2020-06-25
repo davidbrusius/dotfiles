@@ -4,7 +4,7 @@
   ci = commit
   lg = log --oneline --decorate --graph --abbrev-commit
   br = branch
-  cm = checkout master
+  cm = "!f(){ git checkout main || git checkout master; };f"
   cia = commit --amend --no-edit
   rc = rebase --continue
   rs = rebase --skip
