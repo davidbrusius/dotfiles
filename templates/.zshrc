@@ -32,11 +32,16 @@ alias ms="mix phx.server"
 alias ims="iex -S mix phx.server"
 alias deeplink="xcrun simctl openurl booted"
 
+# Disable javac compilation and use native openssl installation to build erlang
+export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
+
 # Enable autojump integration
 # TODO
 
 # Enable autocomplete for brew packages
-# TODO
+if type brew &>/dev/null; then
+  fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+fi
 
 # Enable heroku autocomplete
 # TODO
@@ -44,8 +49,10 @@ alias deeplink="xcrun simctl openurl booted"
 # Asdf config
 . $HOME/.asdf/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
-autoload -Uz compinit
-compinit
 
 # Hook direnv to zsh shell
 eval "$(direnv hook zsh)"
+
+# Initialise completions with ZSH's compinit
+autoload -Uz compinit
+compinit
