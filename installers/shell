@@ -3,9 +3,6 @@ source ${DOTFILES_INSTALLER}/utils
 
 print_in_yellow '\nSetting up - shell - configuration... '
 
-# Copy binaries to ~/.bin
-ln -sf ${DOTFILES}/bin ~/.bin
-
 ln -sf ${DOTFILES_TEMPLATES}/.asdfrc ~/.asdfrc
 ln -sf ${DOTFILES_TEMPLATES}/.bash_profile ~/.bash_profile
 ln -sf ${DOTFILES_TEMPLATES}/.default-gems ~/.default-gems
