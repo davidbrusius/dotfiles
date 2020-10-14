@@ -7,8 +7,6 @@ tap 'homebrew/services'
 tap 'heroku/brew'
 
 brew 'autojump'
-brew 'bash'
-brew 'bash-completion'
 brew 'git'
 brew 'go'
 brew 'heroku'
