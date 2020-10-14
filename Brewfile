@@ -7,6 +7,7 @@ tap 'homebrew/services'
 tap 'heroku/brew'
 
 brew 'autojump'
+brew 'direnv'
 brew 'git'
 brew 'go'
 brew 'heroku'
