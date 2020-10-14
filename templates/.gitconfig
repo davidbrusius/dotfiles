@@ -9,7 +9,7 @@
   rc = rebase --continue
   rs = rebase --skip
   reset-author = commit --amend --no-edit --reset-author
-  fetch-rebase = !git fetch origin && git rebase origin/master
+  fetch-rebase = "!f(){ git fetch origin && (git rebase origin/main || git rebase origin/master); };f"
   unstage = reset --soft HEAD^
 
 [color]
