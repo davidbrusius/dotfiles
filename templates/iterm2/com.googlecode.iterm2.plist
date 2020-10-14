@@ -10,6 +10,8 @@
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -90,11 +92,11 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>496 486 799 448 0 0 1792 1097 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>586 528 620 392 0 0 1792 1097 </string>
+	<string>580 1888 620 392 -390 1120 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1792 1097 0 0 1792 1097 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-390 1120 2560 1417 -390 1120 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>-390 2010 810 527 -390 1120 2560 1417 </string>
 	<key>NeverWarnAboutShortLivedSessions_A70033D0-4A01-4979-B92C-CD72691E5484</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A70033D0-4A01-4979-B92C-CD72691E5484_selection</key>
@@ -731,6 +733,8 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.7</string>
+		<string>3.3.11</string>
+		<string>3.3.12</string>
 	</array>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
@@ -742,14 +746,14 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1792, 1120}}</string>
+		<string>{{-390, 1120}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{10, 843}</string>
+		<string>{345, 2018}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>A2926133-488C-4D0B-BC26-27EB4D52C2AB</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>27</integer>
+	<integer>76</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1206,6 +1210,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.titleOverrideFormat</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.tty</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1474,18 +1486,6 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>resource_name: "request"</string>
-		<string>resource_name: "query sites"</string>
-		<string>request</string>
-		<string>facet_name</string>
-		<string>PP**</string>
-		<string>****</string>
-		<string>cart</string>
-		<string>msemplo</string>
-		<string>memplo</string>
-	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>602027966.75339794</real>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -1540,11 +1540,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-19T17:29:11Z</date>
+	<date>2020-10-14T15:25:18Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
-	<key>SUSkippedVersion</key>
-	<string>3.3.9</string>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>2100023576</integer>
+	<key>SUUpdateRelaunchingMarker</key>
+	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -1580,7 +1582,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.7</string>
+	<string>3.3.12</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
