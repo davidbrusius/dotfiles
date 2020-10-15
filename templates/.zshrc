@@ -56,3 +56,7 @@ eval "$(direnv hook zsh)"
 # Initialise completions with ZSH's compinit
 autoload -Uz compinit
 compinit
+
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
