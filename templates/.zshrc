@@ -36,15 +36,15 @@ alias deeplink="xcrun simctl openurl booted"
 export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
 
 # Enable autojump integration
-# TODO
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # Enable autocomplete for brew packages
 if type brew &>/dev/null; then
   fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 fi
 
-# Enable heroku autocomplete
-# TODO
+# Heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/david.brusius/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
 # Asdf config
 . $HOME/.asdf/asdf.sh
