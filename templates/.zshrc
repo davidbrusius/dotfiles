@@ -18,10 +18,6 @@ setopt HIST_VERIFY
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
-# Enable zsh command correction
-setopt CORRECT
-setopt CORRECT_ALL
-
 # Set a higher open files limit to allow multiple kafka consumers using Elixir
 ulimit -n 350
 
@@ -50,6 +46,9 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/david.brusius/Library/Caches/heroku/autocomplete
 . $HOME/.asdf/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
 
+# Docker config
+fpath=(~/.zsh/completion $fpath)
+
 # Hook direnv to zsh shell
 eval "$(direnv hook zsh)"
 
@@ -60,3 +59,6 @@ compinit
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
+
+# Spaceship configs
+SPACESHIP_DOCKER_SHOW=false
