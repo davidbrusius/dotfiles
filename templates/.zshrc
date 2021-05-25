@@ -52,13 +52,18 @@ fpath=(~/.zsh/completion $fpath)
 # Hook direnv to zsh shell
 eval "$(direnv hook zsh)"
 
-# Initialise completions with ZSH's compinit
-autoload -Uz compinit
-compinit
-
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
 
 # Spaceship configs
 SPACESHIP_DOCKER_SHOW=false
+SPACESHIP_PROMPT_ORDER=(dir git node ruby elixir golang battery)
+
+# Initialise completions with ZSH's compinit
+autoload -Uz compinit
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+  compinit
+else
+  compinit -C
+fi
