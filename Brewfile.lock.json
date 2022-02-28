@@ -5,19 +5,19 @@
         "revision": "3b7cba3e1c32e5908f8f688033bd614195c020d7"
       },
       "homebrew/cask-drivers": {
-        "revision": "676b9f5d0567fcc5edb45e82d89d9f6e721cbc04"
+        "revision": "d6e20ba1ca91283713b1f225777997ce64b4a37c"
       },
       "homebrew/cask-fonts": {
-        "revision": "2ff17eab70d183f5a3e6121b0b8537bd3ccfd507"
+        "revision": "9a5073ab710e3a602434a97d0dbba09e3499dd4e"
       },
       "homebrew/cask-versions": {
-        "revision": "c9601bbc4d5cff69fcd8e1dc9f484787c5577c58"
+        "revision": "a78ba9950eddf98256e915584fb4ec737d207b86"
       },
       "homebrew/core": {
-        "revision": "5777876f836e1d657f616f5f747c23d1e8ed78c9"
+        "revision": "fb9aa35977eebc05f859934a3edc5f2487a4dbdf"
       },
       "homebrew/services": {
-        "revision": "1f3c8933df866dd499cdfc27bcae873551c2e481"
+        "revision": "a69bec78a0ce6501e6dcbcc0c645fc31890218fc"
       }
     },
     "brew": {
@@ -629,6 +629,20 @@
             }
           }
         }
+      },
+      "asdf": {
+        "version": "0.9.0",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "all": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/asdf/blobs/sha256:2c1733505b491d9d5a9442655c123c68fd3a3b4e102c89bab39898246aa0e405",
+              "sha256": "2c1733505b491d9d5a9442655c123c68fd3a3b4e102c89bab39898246aa0e405"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -709,15 +723,21 @@
         "options": {
           "full_name": "firefox"
         }
+      },
+      "font-fira-mono-for-powerline": {
+        "version": "latest",
+        "options": {
+          "full_name": "font-fira-mono-for-powerline"
+        }
       }
     }
   },
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "3.3.16",
+        "HOMEBREW_VERSION": "3.4.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "5777876f836e1d657f616f5f747c23d1e8ed78c9",
+        "Homebrew/homebrew-core": "fb9aa35977eebc05f859934a3edc5f2487a4dbdf",
         "CLT": "13.2.0.0.1.1638488800",
         "Xcode": "13.2.1",
         "macOS": "12.2.1"

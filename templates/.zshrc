@@ -1,3 +1,16 @@
+# Oh My ZSH config
+export ZSH=$HOME/.oh-my-zsh
+zstyle ":omz:update" mode reminder
+COMPLETION_WAITING_DOTS="true"
+
+# Oh My ZSH theme
+ZSH_THEME="robbyrussell"
+
+source $ZSH/oh-my-zsh.sh
+
+# Set VS Code as default editor
+export EDITOR="code"
+
 # Case-insensitive globbing
 setopt NO_CASE_GLOB
 
@@ -34,27 +47,14 @@ export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openss
 # Enable autojump integration
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-# Enable autocomplete for brew packages
-if type brew &>/dev/null; then
-  fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
-fi
-
-# Asdf config
-. $HOME/.asdf/asdf.sh
-fpath=(${ASDF_DIR}/completions $fpath)
-
 # Docker config
 fpath=(~/.zsh/completion $fpath)
 
 # Hook direnv to zsh shell
 eval "$(direnv hook zsh)"
 
-# Initialise completions with ZSH's compinit
-autoload -Uz compinit
-if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
-  compinit
-else
-  compinit -C
-fi
+# Oh My ZSH plugins
+plugins=(asdf git)
 
-eval "$(starship init zsh)"
+# Hide username from prompt context
+prompt_context() {}
