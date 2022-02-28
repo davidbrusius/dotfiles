@@ -39,9 +39,6 @@ if type brew &>/dev/null; then
   fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 fi
 
-# Heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=/Users/david.brusius/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
-
 # Asdf config
 . $HOME/.asdf/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
