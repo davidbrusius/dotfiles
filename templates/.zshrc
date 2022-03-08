@@ -6,10 +6,13 @@ COMPLETION_WAITING_DOTS="true"
 # Oh My ZSH theme
 ZSH_THEME="robbyrussell"
 
-source $ZSH/oh-my-zsh.sh
+# Oh My ZSH plugins
+plugins=(
+  asdf
+  git
+)
 
-# Set VS Code as default editor
-export EDITOR="code"
+source $ZSH/oh-my-zsh.sh
 
 # Case-insensitive globbing
 setopt NO_CASE_GLOB
@@ -52,9 +55,6 @@ fpath=(~/.zsh/completion $fpath)
 
 # Hook direnv to zsh shell
 eval "$(direnv hook zsh)"
-
-# Oh My ZSH plugins
-plugins=(asdf git)
 
 # Hide username from prompt context
 prompt_context() {}
