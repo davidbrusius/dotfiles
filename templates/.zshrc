@@ -9,7 +9,9 @@ ZSH_THEME="robbyrussell"
 # Oh My ZSH plugins
 plugins=(
   asdf
+  aws
   git
+  terraform
 )
 
 source $ZSH/oh-my-zsh.sh
