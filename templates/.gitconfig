@@ -44,3 +44,7 @@
 
 [includeIf "gitdir:~/dev/realsure/"]
   path = ~/.gitconfig.work
+[gpg]
+	program = gpg2
+[init]
+	defaultBranch = main
