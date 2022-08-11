@@ -11,6 +11,7 @@ plugins=(
   asdf
   aws
   git
+  kubectl
   terraform
 )
 
