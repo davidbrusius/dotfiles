@@ -37,14 +37,16 @@
   autosquash = true
 
 [github]
-	user = davidbrusius
+  user = davidbrusius
+
+[gpg]
+  program = gpg2
+
+[init]
+  defaultBranch = main
 
 [include]
   path = ~/.gitconfig.personal
 
 [includeIf "gitdir:~/dev/realsure/"]
   path = ~/.gitconfig.work
-[gpg]
-	program = gpg2
-[init]
-	defaultBranch = main
