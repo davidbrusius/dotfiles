@@ -41,11 +41,13 @@ setopt SHARE_HISTORY
 ulimit -n 350
 
 # Aliases
+alias awsrs="export AWS_PROFILE=rs-sandbox"
 alias dc="docker-compose"
+alias deeplink="xcrun simctl openurl booted"
+alias ims="iex -S mix phx.server"
+alias kc="kubectl"
 alias lsa="ls -lah"
 alias ms="mix phx.server"
-alias ims="iex -S mix phx.server"
-alias deeplink="xcrun simctl openurl booted"
 
 # Disable javac compilation and use native openssl installation to build erlang
 export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
