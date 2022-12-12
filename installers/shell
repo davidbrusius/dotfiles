@@ -8,4 +8,7 @@ ln -sf ${DOTFILES_TEMPLATES}/.zshrc ~/.zshrc
 ln -sf ${DOTFILES_TEMPLATES}/.zshenv ~/.zshenv
 ln -sf ${DOTFILES_TEMPLATES}/.default-gems ~/.default-gems
 
+mkdir -p ~/.zsh/functions
+ln -sf ${DOTFILES_TEMPLATES}/zshfunctions/* ~/.zsh/functions
+
 print_success

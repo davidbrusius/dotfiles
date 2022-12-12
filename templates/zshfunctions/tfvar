@@ -1,0 +1,10 @@
+function tfvar {
+  SELECTED=$(terraform workspace show)
+  FILENAME="${SELECTED}.tfvars"
+
+  if test -e $FILENAME; then
+    terraform $argv --var-file $FILENAME
+  else
+    terraform $argv
+  fi
+}

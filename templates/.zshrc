@@ -55,8 +55,11 @@ export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openss
 # Enable autojump integration
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-# Docker config
-fpath=(~/.zsh/completion $fpath)
+# Add Docker and custom functions configs
+fpath=(~/.zsh/completion ~/.zsh/functions $fpath)
+
+# Autoload custom functions
+autoload tfvar
 
 # Hook direnv to zsh shell
 eval "$(direnv hook zsh)"
