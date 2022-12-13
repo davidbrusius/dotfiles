@@ -1,0 +1,17 @@
+function rpromptcustom {
+  if [[ -n "$AWS_PROFILE" ]]; then
+    local aws_profile=$AWS_PROFILE
+  fi
+
+  if [[ "$PWD" != ~ && -d .terraform && -r .terraform/environment ]]; then
+    local tf_workspace="$(< .terraform/environment)"
+  fi
+
+  if [[ -n $aws_profile && -n $tf_workspace ]]; then
+    echo "%F{yellow}[aws:${aws_profile:gs/%/%%}]%f %F{magenta}[tf:${tf_workspace:gs/%/%%}]%f"
+  elif [[ -n $aws_profile ]]; then
+    echo "%F{yellow}[aws:${aws_profile:gs/%/%%}]%f"
+  elif [[ -n $tf_workspace ]]; then
+    echo "%F{magenta}[tf:${tf_workspace:gs/%/%%}]%f"
+  fi
+}

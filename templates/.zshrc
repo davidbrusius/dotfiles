@@ -59,6 +59,7 @@ export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openss
 fpath=(~/.zsh/completion ~/.zsh/functions $fpath)
 
 # Autoload custom functions
+autoload rpromptcustom
 autoload tfvar
 
 # Hook direnv to zsh shell
@@ -66,3 +67,6 @@ eval "$(direnv hook zsh)"
 
 # Hide username from prompt context
 prompt_context() {}
+
+# RPROMPT customization
+RPROMPT='$(rpromptcustom)'
