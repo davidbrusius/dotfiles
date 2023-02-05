@@ -1,9 +1,3 @@
 [user]
   email = david.brusius@realsure.com
   name = David Brusius
-
-[commit]
-  gpgsign = true
-
-[user]
-  signingkey = 35D59A85F911BC55

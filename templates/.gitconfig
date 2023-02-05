@@ -46,6 +46,12 @@
 [gpg]
   program = gpg2
 
+[commit]
+  gpgsign = true
+
+[user]
+  signingkey = 35D59A85F911BC55
+
 [init]
   defaultBranch = main
 
