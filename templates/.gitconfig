@@ -58,5 +58,5 @@
 [include]
   path = ~/.gitconfig.personal
 
-[includeIf "gitdir:~/dev/realsure/"]
+[includeIf "gitdir:~/dev/doximity/"]
   path = ~/.gitconfig.work
