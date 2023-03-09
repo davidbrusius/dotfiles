@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Dotfiles vars
-export DOTFILES="${HOME}/.dotfiles"
+export DOTFILES="${HOME}/dotfiles"
 export DOTFILES_INSTALLER="${DOTFILES}/installers"
 export DOTFILES_TEMPLATES="${DOTFILES}/templates"
 
