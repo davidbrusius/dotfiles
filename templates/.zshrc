@@ -53,7 +53,7 @@ alias ms="mix phx.server"
 export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
 
 # Enable autojump integration
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 # Add Docker and custom functions configs
 fpath=(~/.zsh/completion ~/.zsh/functions $fpath)
