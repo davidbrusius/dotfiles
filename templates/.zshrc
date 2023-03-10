@@ -41,7 +41,6 @@ setopt SHARE_HISTORY
 ulimit -n 350
 
 # Aliases
-alias awsrs="export AWS_PROFILE=rs-sandbox"
 alias dc="docker-compose"
 alias deeplink="xcrun simctl openurl booted"
 alias ims="iex -S mix phx.server"
@@ -57,6 +56,12 @@ export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openss
 
 # Add Docker and custom functions configs
 fpath=(~/.zsh/completion ~/.zsh/functions $fpath)
+
+# Dox CLI autocomplete
+dox completion zsh > "${fpath[1]}/_dox"
+
+# Start autocomplete
+autoload -Uz compinit && compinit
 
 # Autoload custom functions
 autoload rpromptcustom
