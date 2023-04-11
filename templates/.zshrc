@@ -70,6 +70,9 @@ autoload tfvar
 # Hook direnv to zsh shell
 eval "$(direnv hook zsh)"
 
+# Init dox compose
+eval "$("$HOME/dev/doximity/dox-compose/bin/dox-init")"
+
 # Hide username from prompt context
 prompt_context() {}
 
