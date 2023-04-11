@@ -47,7 +47,7 @@
   program = gpg2
 
 [commit]
-  gpgsign = true
+  gpgsign = false
 
 [user]
   signingkey = 35D59A85F911BC55

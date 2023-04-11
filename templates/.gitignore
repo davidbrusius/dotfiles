@@ -1,5 +1,6 @@
 .DS_STORE
-.env.development
 .elixir_ls
+.env.development
 .envrc
+.irb_history
 .vscode
