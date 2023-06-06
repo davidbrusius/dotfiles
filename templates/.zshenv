@@ -16,5 +16,10 @@ export CLICOLOR=1
 # Silence direnv logs
 export DIRENV_LOG_FORMAT=""
 
+# Compilers to find libffi
+export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
+
 # Dox CLI token from keychain
 export DOXCLI_GITHUB_TOKEN=$(security find-generic-password -a "$USER" -s "dox_cli_github_token" -w)
