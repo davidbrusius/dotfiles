@@ -11,6 +11,7 @@
   reset-author = commit --amend --no-edit --reset-author
   fetch-rebase = "!f(){ git fetch origin && (git rebase origin/main || git rebase origin/master); };f"
   unstage = reset --soft HEAD^
+  brd = !git branch --merged | grep -v \"\\*\" | grep -v master | grep -v dev | xargs -n 1 git branch -d
 
 [color]
   diff = auto
