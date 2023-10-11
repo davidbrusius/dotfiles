@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
-print_in_yellow '\nSetting up - shell - configuration... '
+print_in_yellow 'Setting up - shell - configuration... '
 
 ln -sf ${DOTFILES_TEMPLATES}/.asdfrc ~/.asdfrc
 ln -sf ${DOTFILES_TEMPLATES}/.zshrc ~/.zshrc

@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
-print_in_yellow '\nSetting up - brew - configuration... '
+print_in_yellow 'Setting up - brew - configuration... \n'
 
 ask_for_confirmation 'Install brew packages?'
 
 if answer_is_yes; then
-  printf "\n"
   brew update
   brew bundle
 

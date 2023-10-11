@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
-print_in_yellow '\nSetting up - OS X - configuration... '
+print_in_yellow 'Setting up - OS X - configuration... '
 
 ask_for_sudo
 

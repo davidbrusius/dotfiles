@@ -12,6 +12,43 @@ ask_for_confirmation() {
   read -n 1
 }
 
+ask_options() {
+  declare var_name="${1}"
+  declare prompt="${2}"
+  declare opts=("${@:3}")
+  declare var_value="${!var_name:-}"
+
+  while true; do
+    print_question "$prompt $var_value\n"
+
+    declare -i i=0
+    for opt in "${opts[@]}"; do
+      echo "${i}) ${opt}"
+      i=$((i+1))
+    done
+
+    declare input_val=""
+
+    if tty -s; then
+      read_input input_val
+    fi
+
+    if [[ -n "${input_val}" ]]; then
+      if (( input_val >= 0 && input_val < ${#opts[@]} )); then
+        var_value="${opts[$input_val]}"
+        eval "${var_name}=\"${var_value}\""
+      fi
+    fi
+
+    if [[ -n "${var_value}" ]]; then
+      break
+    elif ! tty -s; then
+      >&2 echo "${tput_red}TTY not available and ${var_name} is not set${tput_res}"
+      return 1
+    fi
+  done
+}
+
 ask_for_sudo() {
     # Ask for the administrator password upfront.
     sudo -v &> /dev/null
@@ -27,20 +64,26 @@ ask_for_sudo() {
     done &> /dev/null &
 }
 
+read_input() {
+  declare var_name="${1}"
+  echo -en ">> "
+  read -r "${var_name?}"
+}
+
 print_error() {
   print_in_red "[✖] $1 $2\n"
 }
 
 print_in_green() {
-  printf "\e[0;32m$1\e[0m"
+  printf "\e[0;32m$1\e[0m\n"
 }
 
 print_in_purple() {
-  printf "\e[0;35m$1\e[0m"
+  printf "\e[0;35m$1\e[0m\n"
 }
 
 print_in_red() {
-  printf "\e[0;31m$1\e[0m"
+  printf "\e[0;31m$1\e[0m\n"
 }
 
 print_in_yellow() {
@@ -52,5 +95,5 @@ print_question() {
 }
 
 print_success() {
-  print_in_green "✔$1"
+  print_in_green "✔ $1"
 }
