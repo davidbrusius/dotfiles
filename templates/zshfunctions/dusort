@@ -1,0 +1,4 @@
+function dusort {
+  dirs=("$@")
+  du -hs $dirs | sort -h
+}
