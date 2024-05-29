@@ -64,6 +64,7 @@ dox completion zsh > "${fpath[1]}/_dox"
 autoload -Uz compinit && compinit
 
 # Autoload custom functions
+autoload codej
 autoload dusort
 autoload rpromptcustom
 autoload tfvar

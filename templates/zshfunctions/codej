@@ -1,0 +1,4 @@
+function codej {
+  dir=("$1")
+  code `j $dir`
+}
