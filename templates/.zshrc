@@ -47,6 +47,7 @@ alias ims="iex -S mix phx.server"
 alias kc="kubectl"
 alias lsa="ls -lah"
 alias ms="mix phx.server"
+alias openports="sudo lsof -i -P -n | grep LISTEN"
 
 # Disable javac compilation and use native openssl installation to build erlang
 export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
