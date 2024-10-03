@@ -2,8 +2,8 @@
 export PATH="$HOME/.bin:$HOME/.local/bin:/usr/local/sbin/:/bin:/usr/local/opt/go/libexec/bin:/usr/local/opt/libpq/bin:$PATH"
 export PATH="$HOME/dev/infra/works-on-my-machine/bin:$PATH"
 
-# Set Visual Studio Code as default editor
-export EDITOR="code -w"
+# Set Zed as default editor
+export EDITOR="zed -w"
 
 # Keep iex history
 export ERL_AFLAGS="-kernel shell_history enabled"

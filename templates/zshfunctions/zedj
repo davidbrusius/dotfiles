@@ -1,0 +1,4 @@
+function zedj {
+  dir=("$1")
+  zed `j $dir`
+}

@@ -69,6 +69,7 @@ autoload codej
 autoload dusort
 autoload rpromptcustom
 autoload tfvar
+autoload zedj
 
 # Hook direnv to zsh shell
 eval "$(direnv hook zsh)"
