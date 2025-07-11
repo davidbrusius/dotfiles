@@ -4,7 +4,7 @@ zstyle ":omz:update" mode reminder
 COMPLETION_WAITING_DOTS="true"
 
 # Oh My ZSH theme
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Oh My ZSH plugins
 plugins=(

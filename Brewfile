@@ -41,3 +41,4 @@ cask 'whatsapp'
 
 cask 'font-fira-mono'
 cask 'font-fira-mono-for-powerline'
+cask 'font-victor-mono'
