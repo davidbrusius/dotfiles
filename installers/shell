@@ -3,7 +3,6 @@ source ${DOTFILES_INSTALLER}/utils
 
 print_in_yellow 'Setting up - shell - configuration... '
 
-ln -sf ${DOTFILES_TEMPLATES}/.asdfrc ~/.asdfrc
 ln -sf ${DOTFILES_TEMPLATES}/.zshrc ~/.zshrc
 ln -sf ${DOTFILES_TEMPLATES}/.zshenv ~/.zshenv
 ln -sf ${DOTFILES_TEMPLATES}/.default-gems ~/.default-gems

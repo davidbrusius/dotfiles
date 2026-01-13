@@ -5,7 +5,6 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/core'
 tap 'homebrew/services'
 
-brew 'asdf'
 brew 'autojump'
 brew 'direnv'
 brew 'git'

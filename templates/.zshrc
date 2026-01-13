@@ -8,7 +8,6 @@ ZSH_THEME="agnoster"
 
 # Oh My ZSH plugins
 plugins=(
-  asdf
   aws
   git
   kubectl

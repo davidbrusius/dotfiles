@@ -8,9 +8,6 @@ export EDITOR="zed -w"
 # Keep iex history
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-# Set asdf golang config
-export ASDF_GOLANG_MOD_VERSION_ENABLED=true
-
 # Enable terminal colors
 export CLICOLOR=1
 
