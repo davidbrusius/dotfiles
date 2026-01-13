@@ -11,6 +11,7 @@ plugins=(
   aws
   git
   kubectl
+  mise
   terraform
 )
 
