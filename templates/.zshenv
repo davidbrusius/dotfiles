@@ -22,7 +22,12 @@ export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
 
-# Dox CLI token from keychain
+# Anthropic Claude Code
+export ANTHROPIC_BASE_URL=https://api.anthropic.com
+
+# Secure tokens from keychain
 # Updating keychain password:
+#   $ security add-generic-password -a "$USER" -s "anthropic_api_key" -U -w <new-value>
 #   $ security add-generic-password -a "$USER" -s "dox_cli_github_token" -U -w <new-value>
+export ANTHROPIC_API_KEY=$(security find-generic-password -a "$USER" -s "anthropic_api_key" -w)
 export DOXCLI_GITHUB_TOKEN=$(security find-generic-password -a "$USER" -s "dox_cli_github_token" -w)
