@@ -78,6 +78,8 @@ eval "$(direnv hook zsh)"
 eval "$("$HOME/dev/doximity/dox-compose/bin/dox-init")"
 source ~/.config/doxcompose.sh
 
+source <(fzf --zsh)
+
 # Hide username from prompt context
 prompt_context() {}
 

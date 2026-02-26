@@ -1,5 +1,6 @@
 # Update path env
 export PATH="$HOME/.bin:$HOME/.local/bin:/usr/local/sbin/:/bin:/usr/local/opt/go/libexec/bin:/usr/local/opt/libpq/bin:$PATH"
+export PATH="$HOME/dev/infra/dox-eks/scripts:$PATH"
 export PATH="$HOME/dev/infra/works-on-my-machine/bin:$PATH"
 
 # Set Zed as default editor
