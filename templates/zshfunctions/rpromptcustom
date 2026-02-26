@@ -7,11 +7,23 @@ function rpromptcustom {
     local tf_workspace="$(< .terraform/environment)"
   fi
 
-  if [[ -n $aws_profile && -n $tf_workspace ]]; then
-    echo "%F{yellow}[aws:${aws_profile:gs/%/%%}]%f %F{magenta}[tf:${tf_workspace:gs/%/%%}]%f"
-  elif [[ -n $aws_profile ]]; then
-    echo "%F{yellow}[aws:${aws_profile:gs/%/%%}]%f"
-  elif [[ -n $tf_workspace ]]; then
-    echo "%F{magenta}[tf:${tf_workspace:gs/%/%%}]%f"
+  local kube_ctx="$(kubie info ctx 2>/dev/null)"
+  local kube_ns="$(kubie info ns 2>/dev/null)"
+
+  local parts=()
+
+  if [[ -n $aws_profile ]]; then
+    parts+=("%F{yellow}[aws:${aws_profile:gs/%/%%}]%f")
   fi
+
+  if [[ -n $tf_workspace ]]; then
+    parts+=("%F{magenta}[tf:${tf_workspace:gs/%/%%}]%f")
+  fi
+
+  if [[ -n $kube_ctx || -n $kube_ns ]]; then
+    local kube_info="${kube_ctx:gs/%/%%}/${kube_ns:gs/%/%%}"
+    parts+=("[${kube_info} %F{#326CE5}k8s%f]")
+  fi
+
+  echo "${(j: :)parts}"
 }

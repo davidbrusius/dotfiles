@@ -44,6 +44,8 @@ ulimit -n 350
 alias dc="docker-compose"
 alias deeplink="xcrun simctl openurl booted"
 alias ims="iex -S mix phx.server"
+alias k="kubectl"
+alias kb="kubie"
 alias kc="kubectl"
 alias lsa="ls -lah"
 alias ms="mix phx.server"
