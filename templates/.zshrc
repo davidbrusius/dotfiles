@@ -85,5 +85,8 @@ source <(fzf --zsh)
 # Hide username from prompt context
 prompt_context() {}
 
-# RPROMPT customization
+# # RPROMPT customization
 RPROMPT='$(rpromptcustom)'
+
+# dox-agent PATH
+export PATH="/Users/davidbrusius/dev/doximity/agentic-dev/bin:$PATH"
