@@ -1,0 +1,16 @@
+function kubie-dup() {
+  local ctx=$(kb info ctx)
+  local ns=$(kb info ns)
+  osascript -e "
+    tell application \"iTerm\"
+      tell current window
+        tell current session of current tab
+          split vertically with default profile
+        end tell
+        tell last session of current tab
+          write text \"kb ctx ${ctx} -n ${ns}\"
+        end tell
+      end tell
+    end tell
+  "
+}

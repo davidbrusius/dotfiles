@@ -69,6 +69,7 @@ autoload -Uz compinit && compinit
 # Autoload custom functions
 autoload codej
 autoload dusort
+autoload kubie-dup
 autoload rpromptcustom
 autoload tfvar
 autoload zedj
