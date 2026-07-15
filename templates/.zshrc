@@ -91,3 +91,9 @@ RPROMPT='$(rpromptcustom)'
 
 # dox-agent PATH
 export PATH="/Users/davidbrusius/dev/doximity/agentic-dev/bin:$PATH"
+
+# Tools installed to ~/.local/bin (claude, starship, mise)
+export PATH="$HOME/.local/bin:$PATH"
+
+# mise (tool version manager)
+eval "$(mise activate zsh)"
