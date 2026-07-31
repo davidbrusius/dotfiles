@@ -89,9 +89,6 @@ prompt_context() {}
 # # RPROMPT customization
 RPROMPT='$(rpromptcustom)'
 
-# dox-agent PATH
-export PATH="/Users/davidbrusius/dev/doximity/agentic-dev/bin:$PATH"
-
 # Tools installed to ~/.local/bin (claude, starship, mise)
 export PATH="$HOME/.local/bin:$PATH"
 
