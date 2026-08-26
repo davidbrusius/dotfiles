@@ -60,6 +60,13 @@
 [init]
   defaultBranch = main
 
+# Workaround for dox-agent global gitconfig lookups
+# It will not read the included files bellow so we set
+# work settings here and override with personal/work conditionally
+[user]
+  email = dbrusius@doximity.com
+  name = David Brusius
+
 [include]
   path = ~/.gitconfig.personal
 

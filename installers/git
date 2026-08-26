@@ -5,7 +5,6 @@ print_in_yellow 'Setting up - git - configuration... '
 
 # Create symbolic link to default files
 ln -sf ${DOTFILES_TEMPLATES}/.gitconfig ~/.gitconfig
-ln -sf ${DOTFILES_TEMPLATES}/.gitconfig.common ~/.gitconfig.common
 ln -sf ${DOTFILES_TEMPLATES}/.gitconfig.personal ~/.gitconfig.personal
 ln -sf ${DOTFILES_TEMPLATES}/.gitconfig.work ~/.gitconfig.work
 ln -sf ${DOTFILES_TEMPLATES}/.gitignore ~/.gitignore
