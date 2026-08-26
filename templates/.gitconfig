@@ -65,3 +65,6 @@
 
 [includeIf "gitdir:~/dev/doximity/"]
   path = ~/.gitconfig.work
+
+[includeIf "gitdir:~/dev/infra/"]
+  path = ~/.gitconfig.work
