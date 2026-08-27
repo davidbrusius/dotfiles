@@ -13,14 +13,3 @@
 
 [branch]
   autoSetupMerge = simple
-
-[gpg "ssh"]
-  program = dox-git-ssh-sign
-
-[url "https://github.com/"]
-  insteadOf = git@github.com:
-  insteadOf = ssh://git@github.com/
-
-[credential "https://github.com"]
-  helper =
-  helper = !gh auth git-credential
