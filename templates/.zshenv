@@ -25,6 +25,8 @@ export ANTHROPIC_BASE_URL=https://api.anthropic.com
 
 # Secure tokens from keychain
 # Updating keychain password:
-#   $ security add-generic-password -a "$USER" -s "anthropic_api_key" -U -w <new-value>
 #   $ security add-generic-password -a "$USER" -s "dox_cli_github_token" -U -w <new-value>
+#   $ security add-generic-password -a "$USER" -s "fireworks_api_key" -U -w <new-value>
+
 export DOXCLI_GITHUB_TOKEN=$(security find-generic-password -a "$USER" -s "dox_cli_github_token" -w)
+export FIREWORKS_API_KEY=$(security find-generic-password -a "$USER" -s "fireworks_api_key" -w)
