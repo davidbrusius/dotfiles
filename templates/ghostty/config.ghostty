@@ -1,8 +1,17 @@
 # Ghostty configuration
+
+# Appearance
+#theme = Rose Pine Dawn
 font-family = Victor Mono
 font-style = SemiBold
 font-size = 18
-#theme = Rose Pine Dawn
 
+# Customization
+quit-after-last-window-closed = true
+scrollback-limit = 50000000
+copy-on-select = clipboard
+mouse-hide-while-typing = true
+
+# Keybindings
 # Make Option+Delete send Ctrl+W (delete previous word in Codex).
 keybind = alt+backspace=text:\x17
