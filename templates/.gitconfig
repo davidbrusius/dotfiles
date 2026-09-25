@@ -70,8 +70,10 @@
 [include]
   path = ~/.gitconfig.personal
 
-[includeIf "gitdir:~/dev/doximity/"]
+[includeIf "gitdir:~/work/doximity/"]
   path = ~/.gitconfig.work
-
-[includeIf "gitdir:~/dev/infra/"]
-  path = ~/.gitconfig.work
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

@@ -41,7 +41,7 @@ setopt SHARE_HISTORY
 ulimit -n 350
 
 # Aliases
-alias dc="docker-compose"
+alias dc="docker compose"
 alias deeplink="xcrun simctl openurl booted"
 alias ims="iex -S mix phx.server"
 alias k="kubectl"
@@ -78,7 +78,7 @@ autoload zedj
 eval "$(direnv hook zsh)"
 
 # Init dox compose
-eval "$("$HOME/dev/doximity/dox-compose/bin/dox-init")"
+eval "$("$HOME/work/dox-compose/bin/dox-init")"
 source ~/.config/doxcompose.sh
 
 source <(fzf --zsh)
@@ -89,8 +89,5 @@ prompt_context() {}
 # # RPROMPT customization
 RPROMPT='$(rpromptcustom)'
 
-# Tools installed to ~/.local/bin (claude, starship, mise)
-export PATH="$HOME/.local/bin:$PATH"
-
-# mise (tool version manager)
 eval "$(mise activate zsh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"

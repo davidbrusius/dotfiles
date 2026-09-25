@@ -3,6 +3,13 @@ source ${DOTFILES_INSTALLER}/utils
 
 print_in_yellow 'Setting up - brew - configuration... \n'
 
+if ! which brew; then
+    print_in_yellow 'Installing brew for the first time... \n'
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    print_in_yellow 'Brew installed! Open a new terminal to install brew packages.'
+    exit 0
+fi
+
 ask_for_confirmation 'Install brew packages?'
 
 if answer_is_yes; then
