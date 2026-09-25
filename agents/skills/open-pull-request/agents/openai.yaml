@@ -1,0 +1,3 @@
+interface:
+  display_name: Open Pull Request
+  short_description: Open a GitHub pull request safely

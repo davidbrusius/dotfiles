@@ -1,0 +1,4 @@
+interface:
+  display_name: "Start Story Work"
+  short_description: "Create a Jira branch, self-assign, and start the story."
+  default_prompt: "Use $start-jira-ticket to begin Jira ticket ABC-123 with branch name add-traces."

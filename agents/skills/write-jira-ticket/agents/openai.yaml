@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Jira Ticket"
+  short_description: "Draft and create consistent Jira tickets."
+  default_prompt: "Use $write-jira-ticket to create a Jira story from my requirements."
