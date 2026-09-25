@@ -22,7 +22,7 @@ function rpromptcustom {
 
   if [[ -n $kube_ctx || -n $kube_ns ]]; then
     local kube_info="${kube_ctx:gs/%/%%}/${kube_ns:gs/%/%%}"
-    parts+=("[${kube_info} %F{#326CE5}k8s%f]")
+    parts+=("[${kube_info} %F{#326CE5}󱃾 k8s%f]")
   fi
 
   echo "${(j: :)parts}"

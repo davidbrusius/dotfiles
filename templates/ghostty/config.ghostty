@@ -1,0 +1,8 @@
+# Ghostty configuration
+font-family = Victor Mono
+font-style = SemiBold
+font-size = 18
+#theme = Rose Pine Dawn
+
+# Make Option+Delete send Ctrl+W (delete previous word in Codex).
+keybind = alt+backspace=text:\x17
