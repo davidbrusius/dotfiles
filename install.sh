@@ -12,12 +12,16 @@ print_in_purple 'Running installers'
 
 ask_options "installers_to_run" \
   "Installers to run" \
-  "all" "brew" "git" "osx" "shell"
+  "all" "brew" "codex" "git" "osx" "shell"
 
 print_in_green "Running '$installers_to_run' installer(s)"
 
 if [[ $installers_to_run == "brew" || $installers_to_run == "all" ]]; then
   ${DOTFILES_INSTALLER}/brew
+fi
+
+if [[ $installers_to_run == "codex" || $installers_to_run == "all" ]]; then
+  ${DOTFILES_INSTALLER}/codex || exit 1
 fi
 
 if [[ $installers_to_run == "git" || $installers_to_run == "all" ]]; then

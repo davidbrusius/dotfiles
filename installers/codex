@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+set -e
+source "${DOTFILES_INSTALLER}/utils"
+
+print_in_yellow 'Setting up - Codex - skills... '
+
+# dox-agent shares provider skills through this store. Keep each skill's files in
+# the store rather than symlinking to dotfiles: its sandbox grants the store,
+# but not arbitrary symlink targets outside it.
+skills_dir="${XDG_CONFIG_HOME:-$HOME/.config}/dox-agent/skills"
+mkdir -p "$skills_dir"
+
+for skill in "${DOTFILES}/agents/skills"/*; do
+  [[ -f "$skill/SKILL.md" ]] || continue
+
+  target="$skills_dir/${skill##*/}"
+  marker="$target/.dotfiles-managed"
+
+  if [[ -L "$target" ]]; then
+    if [[ "$(readlink "$target")" == "$skill" ]]; then
+      rm "$target"
+    else
+      print_error "Skipping $target: an unrelated symlink is in the way"
+      continue
+    fi
+  elif [[ -e "$target" && ! -f "$marker" ]]; then
+    print_error "Skipping $target: an unmanaged directory or file is in the way"
+    continue
+  fi
+
+  mkdir -p "$target"
+  rsync -a "$skill/" "$target/"
+  printf '%s\n' "$skill" > "$marker"
+done
+
+print_success

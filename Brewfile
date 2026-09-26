@@ -1,3 +1,5 @@
+tap "abue-ammar/tinycast", trusted: true
+
 brew 'autojump'
 brew 'direnv'
 brew 'docker'
@@ -22,5 +24,6 @@ cask 'orbstack'
 cask 'rectangle'
 cask 'setapp'
 cask 'slack'
+cask 'tinycast'
 
 cask 'font-victor-mono'
