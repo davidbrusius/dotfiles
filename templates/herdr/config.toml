@@ -1,0 +1,31 @@
+# herdr configuration (symlinked to ~/.config/herdr/config.toml)
+# Full reference: `herdr --default-config`
+# Apply changes live: `herdr server reload-config` (or prefix+shift+r)
+# Validate: `herdr config check`
+
+onboarding = false
+
+[theme]
+name = "catppuccin"
+auto_switch = false
+
+[keys]
+# prefix = "ctrl+b"
+
+# Example popup command:
+# [[keys.command]]
+# key = "prefix+alt+g"
+# type = "popup"
+# command = "lazygit"
+# width = "80%"
+# height = "80%"
+
+[ui]
+# Set false to let Ghostty handle clicks natively (e.g. Cmd-click URLs).
+# mouse_capture = true
+# copy_on_select = true
+status_indicators = "symbols"
+
+[advanced]
+# Match Ghostty's large scrollback.
+# scrollback_limit_bytes = 10000000

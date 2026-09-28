@@ -15,3 +15,7 @@ mouse-hide-while-typing = true
 # Keybindings
 # Make Option+Delete send Ctrl+W (delete previous word in Codex).
 keybind = alt+backspace=text:\x17
+
+# Cmd+K sends Ctrl+L so the app inside the terminal clears itself.
+# Ghostty's default clear_screen can't clear herdr panes (herdr redraws over it).
+keybind = cmd+k=text:\x0c

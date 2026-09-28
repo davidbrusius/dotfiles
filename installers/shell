@@ -10,6 +10,9 @@ ln -sf ${DOTFILES_TEMPLATES}/.default-gems ~/.default-gems
 mkdir -p ~/.config/ghostty
 ln -sf "${DOTFILES_TEMPLATES}/ghostty/config.ghostty" ~/.config/ghostty/config.ghostty
 
+mkdir -p ~/.config/herdr
+ln -sf "${DOTFILES_TEMPLATES}/herdr/config.toml" ~/.config/herdr/config.toml
+
 mkdir -p ~/.zsh/completion
 mkdir -p ~/.zsh/functions
 ln -sf ${DOTFILES_TEMPLATES}/zshfunctions/* ~/.zsh/functions
