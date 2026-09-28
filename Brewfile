@@ -1,5 +1,7 @@
 tap "abue-ammar/tinycast", trusted: true
+tap "atlassian/homebrew-acli", trusted: true
 
+brew 'acli'
 brew 'autojump'
 brew 'direnv'
 brew 'docker'
