@@ -29,3 +29,6 @@ status_indicators = "symbols"
 [advanced]
 # Match Ghostty's large scrollback.
 # scrollback_limit_bytes = 10000000
+
+[ui.toast]
+delivery = "terminal"

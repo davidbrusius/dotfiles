@@ -91,3 +91,6 @@ RPROMPT='$(rpromptcustom)'
 
 eval "$(mise activate zsh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
+# [Certiv Scout CA merge v2]
+[ -r "/Library/Application Support/ai.certiv.scout/ca-merge.sh" ] && . "/Library/Application Support/ai.certiv.scout/ca-merge.sh"
+# [/Certiv Scout CA merge v2]

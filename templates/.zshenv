@@ -30,3 +30,6 @@ export ANTHROPIC_BASE_URL=https://api.anthropic.com
 
 export NEXUS_BASE64=$(security find-generic-password -a "$USER" -s "nexus_base64" -w)
 export FIREWORKS_API_KEY=$(security find-generic-password -a "$USER" -s "fireworks_api_key" -w)
+# [Certiv Scout CA merge v2]
+[ -r "/Library/Application Support/ai.certiv.scout/ca-merge.sh" ] && . "/Library/Application Support/ai.certiv.scout/ca-merge.sh"
+# [/Certiv Scout CA merge v2]

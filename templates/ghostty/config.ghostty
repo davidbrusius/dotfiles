@@ -19,3 +19,6 @@ keybind = alt+backspace=text:\x17
 # Cmd+K sends Ctrl+L so the app inside the terminal clears itself.
 # Ghostty's default clear_screen can't clear herdr panes (herdr redraws over it).
 keybind = cmd+k=text:\x0c
+
+# Allow Cmd+V to paste into Ghostty's search bar.
+keybind = super+v=paste_from_clipboard
