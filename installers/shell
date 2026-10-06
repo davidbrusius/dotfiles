@@ -13,7 +13,7 @@ ln -sf "${DOTFILES_TEMPLATES}/ghostty/config.ghostty" ~/.config/ghostty/config.g
 mkdir -p ~/.config/herdr
 ln -sf "${DOTFILES_TEMPLATES}/herdr/config.toml" ~/.config/herdr/config.toml
 
-mkdir -p ~/.config/herdr
+mkdir -p ~/.config/tinycast
 ln -sf "${DOTFILES_TEMPLATES}/tinycast/settings.json" ~/.config/tinycast/settings.json
 
 mkdir -p ~/.zsh/completion
