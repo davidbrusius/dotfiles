@@ -10,7 +10,9 @@ name = "catppuccin"
 auto_switch = false
 
 [keys]
-# prefix = "ctrl+b"
+prefix = "ctrl+space"
+split_horizontal = "prefix+minus"
+split_vertical = "prefix+="
 
 # Example popup command:
 # [[keys.command]]
@@ -28,7 +30,7 @@ status_indicators = "symbols"
 
 [advanced]
 # Match Ghostty's large scrollback.
-# scrollback_limit_bytes = 10000000
+scrollback_limit_bytes = 10000000
 
 [ui.toast]
 delivery = "terminal"

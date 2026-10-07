@@ -1,8 +1,10 @@
 tap "abue-ammar/tinycast", trusted: true
 tap "atlassian/homebrew-acli", trusted: true
+tap "chainguard-dev/tap", trusted: true
 
 brew 'acli'
 brew 'autojump'
+brew 'chainctl'
 brew 'direnv'
 brew 'docker'
 brew 'fzf'
@@ -16,12 +18,12 @@ brew 'zsh'
 
 #cask 'alfred'
 #cask 'dash6'
-#cask 'google-drive'
 #cask 'logitech-camera-settings'
 
 cask '1password'
 cask 'dropbox'
 cask 'ghostty'
+cask 'google-drive'
 cask 'orbstack'
 cask 'rectangle'
 cask 'setapp'
