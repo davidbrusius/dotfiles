@@ -16,9 +16,6 @@ ln -sf "${DOTFILES_TEMPLATES}/herdr/config.toml" ~/.config/herdr/config.toml
 mkdir -p ~/.config/tinycast
 ln -sf "${DOTFILES_TEMPLATES}/tinycast/settings.json" ~/.config/tinycast/settings.json
 
-mkdir -p ~/Library/Application\ Support/com.tinycast.app
-ln -sf "${DOTFILES_TEMPLATES}/tinycast/quick-actions.json" ~/Library/Application\ Support/com.tinycast.app/quick-actions.json
-
 mkdir -p ~/.zsh/completion
 mkdir -p ~/.zsh/functions
 ln -sf ${DOTFILES_TEMPLATES}/zshfunctions/* ~/.zsh/functions
