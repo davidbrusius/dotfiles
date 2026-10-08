@@ -1,0 +1,10 @@
+[
+  {
+    "createdAt" : 813157833.39107,
+    "iconSymbol" : "textformat",
+    "id" : "579240B7-F9AE-40DD-A9E1-520BB5F33E23",
+    "instructions" : "Translate the text to Brazilian Portuguese (if it's already Portuguese, translate to English). Fix any grammar issues. Preserve tone, formatting and line breaks. Output only the result, no commentary.",
+    "name" : "AI Translate",
+    "previewsResult" : true
+  }
+]
