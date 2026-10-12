@@ -1,6 +1,8 @@
 {
   "general": {
+    "launcherShortcut": "cmd+space",
     "showInMenuBar": false,
+    "automaticallyCheckForUpdates": true,
     "popToRootSeconds": 0,
     "escapeKeyBehavior": "navigateBackOrClose",
     "autoSwitchInputSource": null,
@@ -27,6 +29,7 @@
     "sensitivity": "medium"
   },
   "applications": {
+    "enabled": true,
     "searchScopes": [
       "/Applications",
       "/Applications/Utilities",
@@ -36,10 +39,21 @@
       "/System/Volumes/Preboot/Cryptexes/App/System/Applications",
       "/System/Library/CoreServices/Finder.app",
       "~/Applications"
-    ]
+    ],
+    "apps": {}
+  },
+  "systemSettings": {
+    "enabled": true,
+    "panes": {}
+  },
+  "systemActions": {
+    "enabled": true,
+    "actions": {}
   },
   "commands": {
-    "enabled": false,
+    "builtInEnabled": true,
+    "builtIn": {},
+    "enabled": true,
     "showInLauncher": true
   },
   "quicklinks": {
@@ -47,7 +61,8 @@
     "showInLauncher": true,
     "opensNewWindow": false,
     "selectionFallback": "ask",
-    "confirmsBeforeDelete": true
+    "confirmsBeforeDelete": true,
+    "commands": {}
   },
   "appleShortcuts": {
     "enabled": false
@@ -60,32 +75,65 @@
     "retentionDays": "forever",
     "opensTo": "recent",
     "newChatAfterMinutes": 5,
-    "toolRounds": 25
+    "toolRounds": 25,
+    "commands": {
+      "ai-chat": {
+        "shortcut": null,
+        "alias": "ai",
+        "showInLauncher": true
+      }
+    }
   },
   "quickActions": {
-    "targetLanguage": "pt"
+    "targetLanguage": "pt",
+    "commands": {
+      "fix-grammar": {
+        "shortcut": "shift+cmd+g",
+        "alias": null,
+        "showInLauncher": true
+      },
+      "translate": {
+        "shortcut": null,
+        "alias": null,
+        "showInLauncher": false
+      }
+    }
+  },
+  "dictation": {
+    "mode": "toggle",
+    "shortcut": null,
+    "model": "redux",
+    "microphone": null,
+    "destination": "paste",
+    "adaptsCapitalization": true,
+    "releaseAfterMinutes": 1,
+    "language": null
   },
   "fileSearch": {
     "enabled": false,
     "scopes": [
       "~"
     ],
-    "ignorePatterns": []
+    "ignorePatterns": [],
+    "commands": {}
   },
   "notes": {
     "enabled": false,
     "rendersMarkdown": true,
     "showsFormattingBar": true,
-    "folder": null
+    "folder": null,
+    "commands": {}
   },
   "snippets": {
     "showInLauncher": true,
-    "folder": null
+    "folder": null,
+    "commands": {}
   },
   "navigation": {
     "enabled": false,
     "menuSearchShowsAppleMenu": false,
-    "menuSearchDisabledApps": []
+    "menuSearchDisabledApps": [],
+    "commands": {}
   },
   "windowManagement": {
     "enabled": false,
@@ -131,9 +179,11 @@
       "previous-space": null,
       "next-space": null
     },
+    "aliases": {},
     "customSizes": [],
     "layouts": [],
-    "rooms": []
+    "rooms": [],
+    "commands": {}
   },
   "clipboard": {
     "enabled": true,
@@ -142,11 +192,19 @@
     "disabledApps": [
       "com.apple.keychainaccess",
       "com.apple.Passwords"
-    ]
+    ],
+    "commands": {
+      "clipboard-history": {
+        "shortcut": "shift+cmd+c",
+        "alias": "clip",
+        "showInLauncher": true
+      }
+    }
   },
   "emoji": {
     "skinTone": "none",
-    "gridColumns": 8
+    "gridColumns": 8,
+    "commands": {}
   },
   "calendar": {
     "showInLauncher": true,
@@ -154,12 +212,14 @@
     "span": "todayAndTomorrow",
     "joinWindowMinutes": 5,
     "autoJoinConfirms": true,
+    "autoJoinNamedProvidersOnly": false,
     "meetingBrowser": null,
     "menuBar": "disabled",
     "menuBarUpcomingEvents": "today",
     "menuBarLinkedEventsOnly": true,
     "menuBarHidesWhenEmpty": false,
-    "hideCurrentEventAfterMinutes": "never"
+    "hideCurrentEventAfterMinutes": "never",
+    "commands": {}
   },
   "extensions": {
     "showInLauncher": true
