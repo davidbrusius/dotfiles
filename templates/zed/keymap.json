@@ -1,0 +1,43 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-left": "project_panel::CollapseAllEntries",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-cmd-s": "workspace::SaveWithoutFormat",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "ctrl-cmd-s": "workspace::SaveWithoutFormat",
+    },
+  },
+  {
+    "bindings": {
+      "cmd-shift-l": "editor::SplitSelectionIntoLines",
+    },
+  },
+  {
+    "bindings": {
+      "alt-cmd-s": "workspace::ToggleWorktreeSecurity",
+    },
+  },
+  {
+    "bindings": {
+      "alt-shift-p": "editor::CopyRelativePath"
+    }
+  }
+]
