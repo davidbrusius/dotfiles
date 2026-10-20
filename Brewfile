@@ -16,13 +16,9 @@ brew 'mise'
 brew 'tree'
 brew 'zsh'
 
-#cask 'alfred'
-#cask 'dash6'
-#cask 'logitech-camera-settings'
-
-
 cask '1password'
 cask 'dropbox'
+cask 'firefox'
 cask 'font-victor-mono'
 cask 'ghostty'
 cask 'google-drive'
