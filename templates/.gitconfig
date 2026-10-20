@@ -60,6 +60,15 @@
 [init]
   defaultBranch = main
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
 # Workaround for dox-agent global gitconfig lookups
 # It will not read the included files bellow so we set
 # work settings here and override with personal/work conditionally
@@ -72,8 +81,3 @@
 
 [includeIf "gitdir:~/work/doximity/"]
   path = ~/.gitconfig.work
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
