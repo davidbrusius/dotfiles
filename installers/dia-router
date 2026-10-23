@@ -7,7 +7,7 @@ APP="${HOME}/Applications/Dia Router.app"
 PLIST="${APP}/Contents/Info.plist"
 
 # Stop a running instance (it stays open) before replacing it
-pkill -f "Dia Router.app/Contents/MacOS/applet" 2>/dev/null
+pkill -f "Dia Router.app/Contents/MacOS/" 2>/dev/null
 
 mkdir -p "${HOME}/Applications"
 rm -rf "${APP}"
