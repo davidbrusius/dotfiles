@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+source ${DOTFILES_INSTALLER}/utils
+
+print_in_yellow 'Building - Dia Router'
+
+APP="${HOME}/Applications/Dia Router.app"
+PLIST="${APP}/Contents/Info.plist"
+
+mkdir -p "${HOME}/Applications"
+rm -rf "${APP}"
+osacompile -o "${APP}" "${DOTFILES_TEMPLATES}/dia-router/DiaRouter.applescript"
+
+plutil -replace CFBundleIdentifier -string "local.dotfiles.dia-router" "${PLIST}"
+plutil -replace CFBundleName -string "Dia Router" "${PLIST}"
+plutil -replace LSUIElement -bool true "${PLIST}"
+plutil -replace CFBundleURLTypes -json \
+  '[{"CFBundleURLName":"Web URL","CFBundleTypeRole":"Viewer","CFBundleURLSchemes":["http","https"]}]' "${PLIST}"
+# macOS only lists apps that also open web documents as browsers
+plutil -replace CFBundleDocumentTypes -json \
+  '[{"CFBundleTypeName":"Web Document","CFBundleTypeRole":"Viewer","LSHandlerRank":"Alternate","LSItemContentTypes":["public.html","public.xhtml"]}]' "${PLIST}"
+
+# Reuse Dia's icon (copied from the installed app, not stored in dotfiles)
+DIA_ICON="/Applications/Dia.app/Contents/Resources/AppIcon.icns"
+if [[ -f "${DIA_ICON}" ]]; then
+  rm -f "${APP}/Contents/Resources/droplet.icns" "${APP}/Contents/Resources/Assets.car"
+  cp "${DIA_ICON}" "${APP}/Contents/Resources/AppIcon.icns"
+  plutil -replace CFBundleIconFile -string "AppIcon" "${PLIST}"
+  plutil -remove CFBundleIconName "${PLIST}" 2>/dev/null
+fi
+
+codesign --force --deep --sign - "${APP}"
+/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f "${APP}"
+
+print_in_green "Set 'Dia Router' as default browser in System Settings → Desktop & Dock"
+print_success

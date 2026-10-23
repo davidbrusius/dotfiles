@@ -12,7 +12,7 @@ print_in_purple 'Running installers'
 
 ask_options "installers_to_run" \
   "Installers to run" \
-  "all" "brew" "codex" "git" "shell"
+  "all" "brew" "codex" "dia-router" "git" "shell"
 
 print_in_green "Running '$installers_to_run' installer(s)"
 
@@ -22,6 +22,10 @@ fi
 
 if [[ $installers_to_run == "codex" || $installers_to_run == "all" ]]; then
   ${DOTFILES_INSTALLER}/codex || exit 1
+fi
+
+if [[ $installers_to_run == "dia-router" || $installers_to_run == "all" ]]; then
+  ${DOTFILES_INSTALLER}/dia-router
 fi
 
 if [[ $installers_to_run == "git" || $installers_to_run == "all" ]]; then
