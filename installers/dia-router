@@ -3,13 +3,15 @@ source ${DOTFILES_INSTALLER}/utils
 
 print_in_yellow 'Building - Dia Router'
 
-APP="${HOME}/Applications/Dia Router.app"
+# /Applications, not ~/Applications: agent sandboxes (Codex, Claude) can't read
+# ~/Applications, so LaunchServices falls back to Safari inside them
+APP="/Applications/Dia Router.app"
 PLIST="${APP}/Contents/Info.plist"
+LSREGISTER=/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister
 
 # Stop a running instance (it stays open) before replacing it
 pkill -f "Dia Router.app/Contents/MacOS/" 2>/dev/null
 
-mkdir -p "${HOME}/Applications"
 rm -rf "${APP}"
 # -s: stay-open applet, so links after the first skip app launch
 osacompile -s -o "${APP}" "${DOTFILES_TEMPLATES}/dia-router/DiaRouter.applescript"
@@ -33,7 +35,7 @@ if [[ -f "${DIA_ICON}" ]]; then
 fi
 
 codesign --force --deep --sign - "${APP}"
-/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f "${APP}"
+${LSREGISTER} -f "${APP}"
 
 print_in_green "Set 'Dia Router' as default browser in System Settings → Desktop & Dock"
 print_success
