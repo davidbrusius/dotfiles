@@ -6,9 +6,13 @@ print_in_yellow 'Building - Dia Router'
 APP="${HOME}/Applications/Dia Router.app"
 PLIST="${APP}/Contents/Info.plist"
 
+# Stop a running instance (it stays open) before replacing it
+pkill -f "Dia Router.app/Contents/MacOS/applet" 2>/dev/null
+
 mkdir -p "${HOME}/Applications"
 rm -rf "${APP}"
-osacompile -o "${APP}" "${DOTFILES_TEMPLATES}/dia-router/DiaRouter.applescript"
+# -s: stay-open applet, so links after the first skip app launch
+osacompile -s -o "${APP}" "${DOTFILES_TEMPLATES}/dia-router/DiaRouter.applescript"
 
 plutil -replace CFBundleIdentifier -string "local.dotfiles.dia-router" "${PLIST}"
 plutil -replace CFBundleName -string "Dia Router" "${PLIST}"

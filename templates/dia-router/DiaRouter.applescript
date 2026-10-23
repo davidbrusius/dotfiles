@@ -32,4 +32,5 @@ end open
 
 on run
 	-- Double-clicking the app does nothing; it only handles links.
+	-- Built stay-open (osacompile -s) so it remains running between links.
 end run
